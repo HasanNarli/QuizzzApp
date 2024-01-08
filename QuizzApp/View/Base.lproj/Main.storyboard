@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="QuizzApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="degradado" translatesAutoresizingMaskIntoConstraints="NO" id="u1c-g0-bvn">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="19" translatesAutoresizingMaskIntoConstraints="NO" id="cVT-ui-idk">
+                                <rect key="frame" x="25" y="69" width="343" height="729"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score: 0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ywg-jM-RaK">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="45"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="45" id="fSL-A0-PP7"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="26"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="penicilina" translatesAutoresizingMaskIntoConstraints="NO" id="zfQ-gR-Vp7">
+                                        <rect key="frame" x="0.0" y="64" width="343" height="205"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="205" id="mSE-nK-kBu"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The point called NEMO is the point hardest to arrive in all the world." textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KJz-3g-WL9">
+                                        <rect key="frame" x="0.0" y="288" width="343" height="200"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="200" id="qHS-31-GpJ"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="26"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f4A-Ji-Khy">
+                                        <rect key="frame" x="0.0" y="507" width="343" height="50"/>
+                                        <color key="backgroundColor" systemColor="lightTextColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="j6g-ks-ZRZ"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="TRUE">
+                                                    <attributes>
+                                                        <font key="NSFont" size="28" name="Times-Bold"/>
+                                                        <font key="NSOriginalFont" size="28" name="ITFDevanagari-Bold"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </buttonConfiguration>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dzO-m9-4CD">
+                                        <rect key="frame" x="0.0" y="576" width="343" height="50"/>
+                                        <color key="backgroundColor" systemColor="lightTextColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="JLS-T2-BEE"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="FALSE">
+                                                    <attributes>
+                                                        <font key="NSFont" size="28" name="Times-Bold"/>
+                                                        <font key="NSOriginalFont" size="28" name="ITFDevanagariMarathi-Bold"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </buttonConfiguration>
+                                    </button>
+                                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="CcD-Wc-pRt">
+                                        <rect key="frame" x="0.0" y="645" width="343" height="10"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="10" id="WkY-JP-eeq"/>
+                                        </constraints>
+                                    </progressView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F1W-E8-Vg4">
+                                        <rect key="frame" x="0.0" y="674" width="343" height="55"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="36" id="nik-mT-EAL"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="ywg-jM-RaK" firstAttribute="leading" secondItem="cVT-ui-idk" secondAttribute="leading" id="GXM-4n-s8g"/>
+                                    <constraint firstItem="ywg-jM-RaK" firstAttribute="top" secondItem="cVT-ui-idk" secondAttribute="top" id="Twg-Iz-NvV"/>
+                                    <constraint firstAttribute="trailing" secondItem="ywg-jM-RaK" secondAttribute="trailing" id="p2z-1y-oKV"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="u1c-g0-bvn" secondAttribute="bottom" id="A9E-ZU-3HT"/>
+                            <constraint firstItem="u1c-g0-bvn" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="BuI-Rx-Qik"/>
+                            <constraint firstItem="u1c-g0-bvn" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Wv6-p5-ig1"/>
+                            <constraint firstItem="cVT-ui-idk" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="25" id="XEy-nQ-zdb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="cVT-ui-idk" secondAttribute="bottom" constant="20" id="Xrf-OQ-beU"/>
+                            <constraint firstAttribute="trailing" secondItem="cVT-ui-idk" secondAttribute="trailing" constant="25" id="Xzf-D9-j6g"/>
+                            <constraint firstItem="u1c-g0-bvn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="gXr-tH-kCT"/>
+                            <constraint firstItem="cVT-ui-idk" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="whP-kj-ip0"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="130.53435114503816" y="-27.464788732394368"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="degradado" width="750" height="1331"/>
+        <image name="penicilina" width="9900" height="7200"/>
+        <systemColor name="lightTextColor">
+            <color white="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
